@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "public": "app-files",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "builds": [
+    {
+      "src": "app-files/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/app-files/index.html" }
   ],
   "headers": [
     {

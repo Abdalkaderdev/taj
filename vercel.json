@@ -2,26 +2,18 @@
   "version": 2,
   "builds": [
     {
+      "src": "app-files/**",
+      "use": "@vercel/static"
+    },
+    {
       "src": "app-files/index.html",
       "use": "@vercel/static"
     }
   ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/app-files/index.html" }
-  ],
-  "headers": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
+      "src": "/(.*)",
+      "dest": "/app-files/index.html"
     }
   ]
 }

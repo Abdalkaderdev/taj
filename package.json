@@ -1,0 +1,11 @@
+{
+  "name": "marzipano-360-tour",
+  "version": "1.0.0",
+  "description": "360° Interactive Virtual Tour",
+  "scripts": {
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": ["360", "virtual-tour", "marzipano"],
+  "author": "",
+  "license": "ISC"
+}

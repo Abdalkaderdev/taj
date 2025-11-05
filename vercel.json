@@ -6,8 +6,8 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/app-files/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/app-files/index.html" }
   ],
   "headers": [
     {
